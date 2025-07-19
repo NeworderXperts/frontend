@@ -3,13 +3,13 @@ import React from 'react';
 function Forms() {
     return (
         <>
-            <section className="contact-section">
+            <section className="contact-section" style={{ marginTop: '150px' }}>
                 <div className="container">
                     <div className="row">
                         <div className="col-md-4">
                             <div className="contact--info-area">
                                 <h3>Get in <span style={{ color: '#2c67f2' }}>touch</span>
-</h3>
+                                </h3>
                                 <p>Looking for help? Fill the form and start a new adventure.</p>
                                 <div className="single-info">
                                     <h5>Headquaters</h5>
@@ -27,7 +27,7 @@ function Forms() {
                                         <i className="fal fa-phone"></i>
                                         Call - (206)571-7659
                                         <br />
-                                        
+
                                     </p>
                                 </div>
                                 <div className="single-info">
@@ -35,7 +35,7 @@ function Forms() {
                                     <p>
                                         <i className="fal fa-envelope"></i>
                                         Info@order-xperts.com
-                                        
+
                                     </p>
                                 </div>
                                 <div className="ab-social">
@@ -58,7 +58,7 @@ function Forms() {
                         <div className="col-md-8">
                             <div className="contact-form">
                                 <h4>Let’s <span style={{ color: '#2c67f2' }}>touch</span>
-</h4>
+                                </h4>
                                 <p>Integer at lorem eget diam facilisis lacinia ac id massa.</p>
                                 <form action="#" method="post" className="row">
                                     <div className="col-md-6">
@@ -108,7 +108,7 @@ function Forms() {
                 </div>
             </section>
 
-            
+
         </>
     );
 }

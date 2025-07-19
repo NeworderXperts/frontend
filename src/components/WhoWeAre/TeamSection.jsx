@@ -22,7 +22,7 @@ const locations = [
 
 const TeamSection = () => {
   return (
-    <section className="w-100">
+    <section className="w-100" style={{marginTop: "150px"}}>
       {/* Heading */}
       <motion.div
         className="text-center py-4"

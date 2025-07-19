@@ -8,13 +8,14 @@ import HomeOneHeader from './HomeOneHeader.jsx';
 import LandingPage from './LandingPage.jsx';
 import RestaurantService from './RestaurantService.jsx';
 import ReviewSection from './ReviewSection.jsx';
+import Navigation from '../Navigation.jsx';
 function HomeOne() {
     const [drawer, drawerAction] = useToggle(false);
 
     return (
         <>
             <Drawer drawer={drawer} action={drawerAction.toggle} />
-            <HomeOneHeader action={drawerAction.toggle} />
+            <Navigation action={drawerAction.toggle} />
             <HeroHomeOne />
             <LandingPage />
             <RestaurantService />

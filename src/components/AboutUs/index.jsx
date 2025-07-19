@@ -6,6 +6,7 @@ import Drawer from '../Mobile/Drawer.jsx';
 import HeaderAbout from './HeaderAbout.jsx';
 import MenuManagement from './MenuManagment.jsx';
 import FAQSection from './FAQSection';
+import Navigation from '../Navigation.jsx';
 
 function AboutUs() {
     const [drawer, drawerAction] = useToggle(false);
@@ -13,7 +14,8 @@ function AboutUs() {
     return (
         <>
             <Drawer drawer={drawer} action={drawerAction.toggle} />
-            <HeaderAbout drawer={drawer} action={drawerAction.toggle} />
+            {/* <HeaderAbout drawer={drawer} action={drawerAction.toggle} /> */}
+            <Navigation action={drawerAction.toggle} />
             <MenuManagement />
            < FAQSection />
             <FooterHomeOne className="appie-footer-about-area" />

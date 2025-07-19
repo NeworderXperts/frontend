@@ -10,6 +10,7 @@ import HeaderService from './HeaderService.jsx';
 import HeroService from './HeroService.jsx';
 import NewsletterSignup from './NewsletterSignup.jsx'; // ✅ Import the component
 import BlogCardSection from './BlogCardSection';
+import Navigation from '../Navigation.jsx';
 
 function Service() {
     useEffect(() => {
@@ -21,7 +22,8 @@ function Service() {
     return (
         <>
             <Drawer drawer={drawer} action={drawerAction.toggle} />
-            <HeaderService action={drawerAction.toggle} />
+            {/* <HeaderService action={drawerAction.toggle} /> */}
+            <Navigation action={drawerAction.toggle} />
             <HeroService />
             <DetailsService />
             <BlogCardSection />

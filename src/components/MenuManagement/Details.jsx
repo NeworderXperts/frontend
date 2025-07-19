@@ -7,8 +7,9 @@ import useToggle from '../../Hooks/useToggle.js';
 import BackToTop from '../BackToTop.jsx';
 import FooterHomeOne from '../HomeOne/FooterHomeOne.jsx';
 import Drawer from '../Mobile/Drawer.jsx';
-import HeaderNews from '../News/HeaderNews.jsx';
-import HeroNews from '../News/HeroNews.jsx';
+import HeaderNews from '../WhoWeAre/HeaderNews.jsx';
+import HeroNews from '../WhoWeAre/HeroNews.jsx';
+import Navigation from '../Navigation.jsx';
 
 
 
@@ -63,7 +64,8 @@ function Details() {
     return (
         <>
             <Drawer drawer={drawer} action={drawerAction.toggle} />
-            <HeaderNews action={drawerAction.toggle} />
+            {/* <HeaderNews action={drawerAction.toggle} /> */}
+            <Navigation action={drawerAction.toggle} />
             <HeroNews
                 title="Product Title"
                 breadcrumb={[

@@ -9,15 +9,15 @@ import HomeSeven from "./components/HomeSeven/index.jsx";
 import HomeEight from "./components/HomeEight/index.jsx";
 import HomeDark from "./components/HomeDark/index.jsx";
 import HomeRtl from "./components/HomeRtl/index.jsx";
-import News from "./components/News/index.jsx";
-import SingleNews from "./components/News/SingleNews.jsx";
-import Service from "./components/Service/index.jsx";
+import News from "./components/WhoWeAre/index.jsx";
+import SingleNews from "./components/WhoWeAre/SingleNews.jsx";
+import Service from "./components/Pricing/index.jsx";
 import AboutUs from "./components/AboutUs/index.jsx";
 import Contact from "./components/Contact/index.jsx";
 import Error from "./components/Error/index.jsx";
 import AboutUsTwo from "./components/AboutUs/AboutUsTwo.jsx";
-import Shops from "./components/Shops/index.jsx";
-import ShopDetails from './components/Shops/Details';
+import Shops from "./components/MenuManagement/index.jsx";
+import ShopDetails from './components/MenuManagement/Details';
 import Layout from "./components/Helper/Layout.jsx";
 
 const router = createBrowserRouter([

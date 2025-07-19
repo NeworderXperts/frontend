@@ -1,165 +1,102 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import logo from './OrderXpertLogo.png';
+import StickyMenu from '../lib/StickyMenu.js';
 
-function Navigation({ lang = false }) {
+function Navigation({action}) {
+    useEffect(() => {
+        StickyMenu();
+    });
     return (
         <>
-            {lang ? (
-                <ul>
-                    <li>
-                        <a href="#">
-                            أنا <i className="fal fa-angle-down" />
-                        </a>
-                        <ul className="sub-menu">
-                            <li>
-                                <Link to="/">الصفحة الرئيسية 1</Link>
-                            </li>
-                            <li>
-                                <Link to="/home-two">الصفحة الرئيسية 2</Link>
-                            </li>
-                            <li>
-                                <Link to="/home-three">المنزل 3</Link>
-                            </li>
-                            <li>
-                                <Link to="/home-four">المنزل 4</Link>
-                            </li>
-                            <li>
-                                <Link to="/home-five">المنزل 5</Link>
-                            </li>
-                            <li>
-                                <Link to="/home-six">الصفحة الرئيسية 6</Link>
-                            </li>
-                            <li>
-                                <Link to="/home-seven">المنزل 7</Link>
-                            </li>
-                            <li>
-                                <Link to="/home-eight">الصفحة الرئيسية 8</Link>
-                            </li>
-                            <li>
-                                <Link to="/home-dark">الصفحة الرئيسية الظلام</Link>
-                            </li>
-                            <li>
-                                <Link to="/home-rtl">الصفحة الرئيسية Rtl</Link>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <Link to="/service">خدمة</Link>
-                    </li>
-                    <li>
-                        <a href="#">
-                            الصفحات <i className="fal fa-angle-down" />
-                        </a>
-                        <ul className="sub-menu">
-                            <li>
-                                <Link to="/about-us">عن</Link>
-                            </li>
-                            <li>
-                                <Link to="/error">خطأ</Link>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">
-                            أخبار <i className="fal fa-angle-down" />
-                        </a>
-                        <ul className="sub-menu">
-                            <li>
-                                <Link to="/news">صفحة الأخبار </Link>
-                            </li>
-                            <li>
-                                <Link to="/news/single-news">أخبار واحدة</Link>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <Link to="/contact">اتصل</Link>
-                    </li>
-                </ul>
-            ) : (
-                <ul>
-                    <li>
-                        <a href="#">
-                            Home <i className="fal fa-angle-down" />
-                        </a>
-                        <ul className="sub-menu">
-                            <li>
-                                <Link to="/">Home 1</Link>
-                            </li>
-                            <li>
-                                <Link to="/home-two">Home 2</Link>
-                            </li>
-                            <li>
-                                <Link to="/home-three">Home 3</Link>
-                            </li>
-                            <li>
-                                <Link to="/home-four">Home 4</Link>
-                            </li>
-                            <li>
-                                <Link to="/home-five">Home 5</Link>
-                            </li>
-                            <li>
-                                <Link to="/home-six">Home 6</Link>
-                            </li>
-                            <li>
-                                <Link to="/home-seven">Home 7</Link>
-                            </li>
-                            <li>
-                                <Link to="/home-eight">Home 8</Link>
-                            </li>
-                            <li>
-                                <Link to="/home-dark">Home Dark</Link>
-                            </li>
-                            <li>
-                                <Link to="/home-rtl">Home Rtl</Link>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <Link to="/service">Pricing</Link>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Products <i className="fal fa-angle-down" />
-                        </a>
-                        <ul className="sub-menu">
-                            <li>
-                                <Link to="/about-us">Menu-Management</Link>
-                            </li>
-                            <li>
-                                <Link to="/about-us-another">customer odering website-About 2</Link>
-                            </li>
-                            <li>
-                                <Link to="/error">Error/ dine in ordering</Link>
-                            </li>
-                            <li>
-                                <Link to="/shops">Shops/qr menu maker</Link>
-                            </li>
-                            <li>
-                                <Link to="/shops/shop-details">Shop details/ local business opitimization</Link>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Who Are We <i className="fal fa-angle-down" />
-                        </a>
-                        <ul className="sub-menu">
-                            <li>
-                                <Link to="/news">Who Are We</Link>
-                            </li>
-                            <li>
-                                <Link to="/news/single-news">Contact Us</Link>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <Link to="/contact">Contact</Link>
-                    </li>
-                </ul>
-            )}
+            <header className="appie-header-area appie-header-page-area appie-sticky" style={{ backgroundColor: 'red' }}>
+                <div className="container">
+                    <div className="header-nav-box header-nav-box-3 header-nav-box-inner-page">
+                        <div className="row align-items-center">
+                            <div className="col-lg-2 col-md-4 col-sm-5 col-6 order-1 order-sm-1">
+                                <div className="appie-logo-box">
+                                    <a href="/">
+                                        <img src={logo} alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="col-lg-6 col-md-1 col-sm-1 order-3 order-sm-2">
+                                <div className="appie-header-main-menu">
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <Link to="/">Home</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/service">Pricing</Link>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Products <i className="fal fa-angle-down" />
+                                                </a>
+                                                <ul className="sub-menu" style={{ minWidth: '380px' }}>
+                                                    <li>
+                                                        <Link to="/about-us">Menu-Management</Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/about-us-another">customer odering website-About 2</Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/error">Error/ dine in ordering</Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/shops">Shops/qr menu maker</Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/shops/shop-details">Shop details/ local business opitimization</Link>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Who Are We <i className="fal fa-angle-down" />
+                                                </a>
+                                                <ul className="sub-menu">
+                                                    <li>
+                                                        <Link to="/news">Who Are We</Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/news/single-news">Contact Us</Link>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <Link to="/contact">Contact</Link>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4  col-md-7 col-sm-6 col-6 order-2 order-sm-3">
+                                <div className="appie-btn-box text-right">
+                                    <a className="login-btn" href="#">
+                                        <i className="fal fa-user"></i> Login
+                                    </a>
+                                    <a className="main-btn ml-30" href="#">
+                                        Get Started
+                                    </a>
+                                    <div
+                                        onClick={(e) => action(e)}
+                                        className="toggle-btn ml-30 canvas_open d-lg-none d-block"
+                                    >
+                                        <i className="fa fa-bars"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
         </>
     );
 }
+
+
 
 export default Navigation;
