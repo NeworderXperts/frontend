@@ -4,6 +4,7 @@ import qrImage from './1.avif'; // Ensure path is correct
 const QRMenuSection = () => {
     return (
         <section style={{
+            marginTop: '100px',
             width: '100%',
             backgroundColor: '#ffffff',
             padding: '100px 60px',
@@ -13,14 +14,16 @@ const QRMenuSection = () => {
             <div>
                 {/* Top Heading */}
                 <h2 style={{
-                    fontSize: '4rem',
+                    fontSize: '50px',
                     fontWeight: '800',
                     lineHeight: '1.2',
                     marginBottom: '60px',
-                    textAlign: 'left'
+                    textAlign: 'center',
+                    borderBottom: '2px solid #F39C12',
+                    
                 }}>
                     Simplify Your Menu Updates With Real-Time <br />
-                    <span style={{ color: 'blue' }}>Restaurant QR Code Generation App</span>
+                    <span style={{ color: '#F39C12' }}>Restaurant QR Code Generation App</span>
                 </h2>
 
                 {/* QR Image */}
@@ -31,8 +34,10 @@ const QRMenuSection = () => {
                         style={{
                             width: '100%',
                             height: 'auto',
+                            maxHeight: '700px',
+                            maxWidth: '1500px',
                             borderRadius: '30px',
-                            boxShadow: '0 20px 50px rgba(0, 0, 0, 0.2)'
+                            boxShadow: '0 20px 50px grey'
                         }}
                     />
                 </div>

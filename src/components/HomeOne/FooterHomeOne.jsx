@@ -10,7 +10,7 @@ function FooterHomeOne({ className }) {
         <>
             <section
                 className={`appie-footer-area ${className || ''}`}
-                style={{ backgroundColor: '#007BFF', color: '#ffffff', paddingTop: '40px', paddingBottom: '20px' }}
+                style={{ backgroundColor: '#1F2937', color: '#ffffff', paddingTop: '40px', paddingBottom: '20px' }}
             >
                 <div className="container">
                     <div className="row">
@@ -87,11 +87,12 @@ Portland, OR 97210
                                 <p style={{
                                     fontWeight: 'bold',
                                     margin: 0,
-                                    fontSize: '45px',
+                                    fontSize: '20px',
                                     color: 'white',
                                     padding: '1px 20px',
                                 }}>
-                                    © 2021 Order-Xperts. All rights reserved.
+                                    © 2021 Order-Xperts. 
+                                    All rights reserved.
                                 </p>
                             </div>
                         </div>

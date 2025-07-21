@@ -9,7 +9,7 @@ function Navigation({action}) {
     });
     return (
         <>
-            <header className="appie-header-area appie-header-page-area appie-sticky" style={{ backgroundColor: 'red' }}>
+            <header className="appie-header-area appie-header-page-area appie-sticky" style={{ backgroundColor: '#1F2937' }}>
                 <div className="container">
                     <div className="header-nav-box header-nav-box-3 header-nav-box-inner-page">
                         <div className="row align-items-center">
@@ -32,7 +32,7 @@ function Navigation({action}) {
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    Products <i className="fal fa-angle-down" />
+                                                    Products <i className="fal fa-angle-down"/>
                                                 </a>
                                                 <ul className="sub-menu" style={{ minWidth: '380px' }}>
                                                     <li>
@@ -74,11 +74,11 @@ function Navigation({action}) {
                             </div>
                             <div className="col-lg-4  col-md-7 col-sm-6 col-6 order-2 order-sm-3">
                                 <div className="appie-btn-box text-right">
-                                    <a className="login-btn" href="#">
+                                    <a className="main-btn ml-30" href="https://www.orderxperts.com/admin/public/login">
                                         <i className="fal fa-user"></i> Login
                                     </a>
-                                    <a className="main-btn ml-30" href="#">
-                                        Get Started
+                                    <a className="main-btn ml-30" href="https://pronto-ny.com/">
+                                        Menu
                                     </a>
                                     <div
                                         onClick={(e) => action(e)}
