@@ -66,12 +66,13 @@ function DetailsService() {
       {/* Pricing Section */}
       <div
         style={{
+          marginTop: '180px',
           padding: '40px 20px',
           backgroundColor: '#fff',
           borderRadius: '16px',
           margin: '0',
           textAlign: 'center',
-          boxShadow: '0 4px 12px rgba(223, 207, 207, 0.05)',
+          boxShadow: '0 4px 12px white',
         }}
       >
         <h2
@@ -82,7 +83,7 @@ function DetailsService() {
             color: '#1a1a1a',
           }}
         >
-          Our Pricing <span style={{ color: '#007bff' }}>Plans</span>
+          Our Pricing <span style={{ color: 'rgb(243, 156, 18)' }}>Plans</span>
         </h2>
         <StripePricingTable />
       </div>
@@ -106,7 +107,7 @@ function DetailsService() {
               color: '#1a1a1a',
             }}
           >
-            Frequently Asked <span style={{ color: '#007bff' }}>Questions</span>
+            Frequently Asked <span style={{ color: 'rgb(243, 156, 18)' }}>Questions</span>
           </h2>
 
           <div className="accordion" id="faqAccordion">

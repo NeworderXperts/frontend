@@ -39,7 +39,7 @@ const MenuManagement = () => {
 
   return (
     <section style={{
-      marginTop: '100px',
+      marginTop: '150px',
       padding: '80px 20px',
       maxWidth: '1400px',
       margin: '0 auto',

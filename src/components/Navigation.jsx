@@ -9,7 +9,7 @@ function Navigation({action}) {
     });
     return (
         <>
-            <header className="appie-header-area appie-header-page-area appie-sticky" style={{ backgroundColor: '#1F2937' }}>
+            <header className="appie-header-area appie-header-page-area appie-sticky" style={{ backgroundColor: 'rgb(15, 15, 73)' }}>
                 <div className="container">
                     <div className="header-nav-box header-nav-box-3 header-nav-box-inner-page">
                         <div className="row align-items-center">
@@ -32,23 +32,23 @@ function Navigation({action}) {
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    Products <i className="fal fa-angle-down"/>
+                                                    Features <i className="fal fa-angle-down"/>
                                                 </a>
                                                 <ul className="sub-menu" style={{ minWidth: '380px' }}>
                                                     <li>
                                                         <Link to="/about-us">Menu-Management</Link>
                                                     </li>
                                                     <li>
-                                                        <Link to="/about-us-another">customer odering website-About 2</Link>
+                                                        <Link to="/about-us-another">Customer odering website</Link>
+                                                    </li>
+                                                    {/* <li>
+                                                        <Link to="/error">Error/ ine in ordering</Link>
+                                                    </li> */}
+                                                    <li>
+                                                        <Link to="/shops"> QR menu maker</Link>
                                                     </li>
                                                     <li>
-                                                        <Link to="/error">Error/ dine in ordering</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link to="/shops">Shops/qr menu maker</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link to="/shops/shop-details">Shop details/ local business opitimization</Link>
+                                                        <Link to="/shops/shop-details"> Local business opitimization</Link>
                                                     </li>
                                                 </ul>
                                             </li>

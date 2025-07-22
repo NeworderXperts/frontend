@@ -101,10 +101,10 @@ function NewsletterSignup() {
           color: #1a1a1a;
         }
         .text-blue {
-          color: #007bff;
+          color: rgb(243, 156, 18);
         }
         .btn-blue-gradient {
-          background: linear-gradient(to right, #007bff, #0056b3);
+          background: linear-gradient(to right, #ff8400ff, #b35c0058);
           color: #fff;
           border: none;
         }

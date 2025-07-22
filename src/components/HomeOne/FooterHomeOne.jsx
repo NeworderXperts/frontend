@@ -10,7 +10,7 @@ function FooterHomeOne({ className }) {
         <>
             <section
                 className={`appie-footer-area ${className || ''}`}
-                style={{ backgroundColor: '#1F2937', color: '#ffffff', paddingTop: '40px', paddingBottom: '20px' }}
+                style={{ backgroundColor: 'rgb(15, 15, 73)', color: '#ffffff', paddingTop: '40px', paddingBottom: '20px' }}
             >
                 <div className="container">
                     <div className="row">

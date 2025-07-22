@@ -24,7 +24,7 @@ function Service() {
             <Drawer drawer={drawer} action={drawerAction.toggle} />
             {/* <HeaderService action={drawerAction.toggle} /> */}
             <Navigation action={drawerAction.toggle} />
-            <HeroService />
+            {/* <HeroService /> */}
             <DetailsService />
             <BlogCardSection />
             <NewsletterSignup />
