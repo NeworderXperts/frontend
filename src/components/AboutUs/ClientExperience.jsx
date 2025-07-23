@@ -1,8 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-// import emmaImg from './emma.jpg';
-// import davidImg from './david.jpg';
-// import priyaImg from './priya.jpg';
+import emmaImg from './1.webp';
+import davidImg from './2.webp';
+import priyaImg from './4.webp';
+
 
 const testimonials = [
   {
@@ -10,22 +11,23 @@ const testimonials = [
     company: 'Fiddlers Elbow Fish & Chips',
     quote:
       'Fantastic app This is a great app of this online takeaway ordering Website. The service has been superb and great customer service. With all the new updates and features, it gives us and more importantly our customers an app thats easy to use. Thanks Order Xperts.',
-    // image: emmaImg,
+    image: emmaImg,
   },
   {
     name: 'Julie P.',
     company: 'Sandwich Pizza House',
     quote:
       'Your customer service has been stellar via chat/email despite no phone option. I was initially concerned your international location could be an issue but you have delivered excellent, prompt and understandable customer service via chat every time.',
-    // image: davidImg,
+    image: davidImg,
   },
   {
     name: 'Jeff S.',
     company: 'Killer’s Tacos',
     quote:
       'Sales results are picking up now. I think the Website is superb. Best I have ever found.',
-    // image: priyaImg,
+    image: priyaImg,
   },
+  
 ];
 
 const ClientExperience = () => {
@@ -43,10 +45,10 @@ const ClientExperience = () => {
           fontSize: '3rem',
           fontWeight: 800,
           marginBottom: '60px',
-          borderBottom: '2px solid #F39C12',
+          borderBottom: '2px solid black',
         }}
       >
-        What Our <span style={{ color: '#F39C12' }}>Clients</span> Say
+        What Our <span style={{ color: '#F39C12' }}>Clients</span> Say:
       </h2>
 
       <div

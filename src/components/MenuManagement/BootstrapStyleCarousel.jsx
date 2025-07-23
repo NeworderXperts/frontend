@@ -39,7 +39,6 @@ const BootstrapStyleCarousel = () => {
           overflow: 'hidden',
           borderRadius: '20px',
           position: 'relative',
-          marginBottom: '80px'
         }}
       >
         <div className="carousel-inner">
@@ -111,10 +110,13 @@ const BootstrapStyleCarousel = () => {
       {/* Special Offer Section */}
       <section
         style={{
-          padding: '100px 60px',
+          padding: '50px 100px',
           maxWidth: '1300px',
           margin: '0 auto',
-          fontFamily: 'Arial, sans-serif'
+          fontFamily: 'Arial, sans-serif',
+          border: '2px solid black',
+          marginTop: '60px',
+          marginBottom: '40px',
         }}
       >
         <div
@@ -143,7 +145,7 @@ const BootstrapStyleCarousel = () => {
             <div
               style={{
                 fontSize: '0.9rem',
-                color: '#00B9BC',
+                color: 'green',
                 fontWeight: '600',
                 marginBottom: '8px'
               }}
@@ -159,7 +161,7 @@ const BootstrapStyleCarousel = () => {
                 marginBottom: '20px'
               }}
             >
-              $29 Monthly
+              $99 Monthly
             </div>
 
             <p
@@ -170,9 +172,7 @@ const BootstrapStyleCarousel = () => {
                 marginBottom: '30px'
               }}
             >
-              Whether you’re already using the top three delivery platforms or just starting out,
-              this package is perfect for your restaurant. We’ll help you connect with any missing
-              platforms and recommend pricing strategies.
+              No matter if you're new to delivery or already active on the top platforms, this package fits your needs. We’ll assist with connecting to any missing services and provide data-backed pricing recommendations.
             </p>
 
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '15px', alignItems: 'center' }}>
@@ -206,22 +206,6 @@ const BootstrapStyleCarousel = () => {
               >
                 TRY NOW ON WEB
               </button>
-
-              <div style={{ marginTop: '10px', fontSize: '0.9rem', color: '#666', width: '100%' }}>
-                Download for mobile for free
-                <div style={{ marginTop: '8px', display: 'flex', gap: '10px' }}>
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-                    alt="Google Play"
-                    style={{ height: '40px' }}
-                  />
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/9/96/Download_on_the_App_Store_Badge.svg"
-                    alt="App Store"
-                    style={{ height: '40px' }}
-                  />
-                </div>
-              </div>
             </div>
           </div>
 

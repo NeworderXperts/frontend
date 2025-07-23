@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import menuImage from './1.avif'; // Replace with actual image path
 import shopImage from './1.avif'; // Use same or different image
-import menu from './1image.webp'; // Replace with actual image path
+import menu from './1image.png'; // Replace with actual image path
 import {
   FaShieldAlt,
   FaChartBar,
@@ -10,6 +10,7 @@ import {
   FaBan,
   FaHeadset,
 } from 'react-icons/fa';
+import { backIn } from 'framer-motion';
 
 const HeroSeaction = () => {
   const slides = [
@@ -46,13 +47,13 @@ const HeroSeaction = () => {
 
   return (
     <section style={{
-      marginTop: '130px',
-      padding: '80px 20px',
-      maxWidth: '1400px',
-      margin: '0 auto',
-      textAlign: 'center',
-      fontFamily: 'Arial, sans-serif'
-    }}>
+  margin: '110px auto',
+  padding: '80px 20px',
+  maxWidth: '1400px',
+  textAlign: 'center',
+  fontFamily: 'Arial, sans-serif'
+}}>
+
       {/* Main Heading */}
       <h2 style={{
   fontSize: '3.5rem',

@@ -11,18 +11,16 @@ const features = [
 ];
 
 const leaders = [
-  { name: "Arsen Stepanyan", title: "Chief Executive Officer" },
-  { name: "Ashot Bayatyan", title: "Chief Technology Officer" },
-  { name: "Harry Ayvazyan", title: "Business Development" },
+  // { name: "Arsen Stepanyan", title: "Chief Executive Officer" },
+  // { name: "Ashot Bayatyan", title: "Chief Technology Officer" },
+  // { name: "Harry Ayvazyan", title: "Business Development" },
 ];
 
-const locations = [
-  { title: "All Over Country", subtitle: "United States" },
-];
+const locations = [{ title: "All Over Country", subtitle: "United States" }];
 
 const TeamSection = () => {
   return (
-    <section className="w-100" style={{marginTop: "150px"}}>
+    <section className="w-100" style={{ marginTop: "150px" }}>
       {/* Heading */}
       <motion.div
         className="text-center py-4"
@@ -31,7 +29,8 @@ const TeamSection = () => {
         transition={{ duration: 0.6 }}
       >
         <h1 className="fw-bold" style={{ fontSize: "3rem" }}>
-          The <span style={{ color: "#007bff" }}>Team</span> Behind You
+          The <span style={{ color: "rgb(243, 156, 18)" }}>Team</span> Behind
+          You
         </h1>
       </motion.div>
 
@@ -66,7 +65,10 @@ const TeamSection = () => {
           <motion.p
             key={i}
             className="text-muted"
-            style={{ fontSize: "1.25rem", marginBottom: i !== 2 ? "2rem" : "0" }}
+            style={{
+              fontSize: "1.25rem",
+              marginBottom: i !== 2 ? "2rem" : "0",
+            }}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: i * 0.2 }}
@@ -81,7 +83,8 @@ const TeamSection = () => {
       <div className="container my-5" style={{ maxWidth: "1000px" }}>
         <div className="text-center py-4">
           <h1 className="fw-bold" style={{ fontSize: "3rem" }}>
-            What <span style={{ color: "#007bff" }}>Order-Xpert</span> Does for You
+            What <span style={{ color: "rgb(243, 156, 18)" }}>Order-Xpert</span>{" "}
+            Does for You
           </h1>
         </div>
         {features.map((text, index) => (
@@ -91,7 +94,10 @@ const TeamSection = () => {
             style={{ gap: "20px" }}
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            whileHover={{ scale: 1.02, boxShadow: "0 10px 25px rgba(0,0,0,0.1)" }}
+            whileHover={{
+              scale: 1.02,
+              boxShadow: "0 10px 25px rgba(0,0,0,0.1)",
+            }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
             viewport={{ once: true }}
           >
@@ -148,7 +154,10 @@ const TeamSection = () => {
                   transition: "box-shadow 0.3s ease",
                 }}
               />
-              <h5 className="mt-3 mb-1" style={{ fontWeight: "600", color: "#7a7a7a" }}>
+              <h5
+                className="mt-3 mb-1"
+                style={{ fontWeight: "600", color: "#7a7a7a" }}
+              >
                 {leader.name}
               </h5>
               <h6 className="fw-bold">{leader.title}</h6>
@@ -168,7 +177,8 @@ const TeamSection = () => {
             display: "inline-block",
           }}
         >
-          “Serving Restaurants Across the <span style={{ color: "#007bff" }}>United States</span>”
+          “Serving Restaurants Across the{" "}
+          <span style={{ color: "rgb(243, 156, 18)" }}>United States</span>”
         </h1>
 
         <div className="row justify-content-center">
@@ -207,11 +217,7 @@ const TeamSection = () => {
                     fontWeight: "600",
                     textShadow: "0 0 10px rgba(0,0,0,0.5)",
                   }}
-                >
-                  {/* You can show location title/subtitle here if needed */}
-                  {/* <div style={{ fontSize: "1.2rem" }}>{location.title}</div>
-                  <div style={{ fontSize: "1rem" }}>{location.subtitle}</div> */}
-                </div>
+                ></div>
               </div>
             </motion.div>
           ))}
