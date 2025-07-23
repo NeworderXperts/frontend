@@ -13,7 +13,7 @@ function HeroHomeOne({ className }) {
                     <div className="row align-items-center">
                         <div className="col-lg-6">
                             <div className="appie-hero-content">
-                                <span>Welcome To Appie</span>
+                                <span>Welcome To Order-Xperts</span>
                                 <h1 className="appie-title">
                                     Manage it all, in this all new system.
                                 </h1>
